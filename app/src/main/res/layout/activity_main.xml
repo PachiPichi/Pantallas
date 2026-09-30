@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/black"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="▶"
+            android:text="@string/triangulo"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:background="@color/black"
@@ -26,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="10:00"
+            android:text="@string/_10_00"
             android:textColor="#FF0000"
             android:textSize="50sp"
             android:gravity="center" />
@@ -35,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1.º"
+            android:text="@string/_1"
             android:textColor="#FFFFFF"
             android:textSize="32sp"
             android:gravity="center" />
@@ -56,17 +59,17 @@
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+1" />
+                android:text="@string/_1plus" />
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+2" />
+                android:text="@string/_2plus" />
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+3" />
+                android:text="@string/_3plus" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Equipo 1"
+                android:text="@string/equipo_1"
                 android:textColor="@color/white"
                 android:textSize="20sp"/>
 
@@ -88,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="34"
+                android:text="@string/_34"
                 android:textColor="#0F0"
                 android:textSize="80sp" />
         </LinearLayout>
@@ -102,7 +105,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="X"
+            android:text="@string/x"
             android:textColor="#FFF"
             android:gravity="center"
             android:textSize="40sp"/>
@@ -122,17 +125,17 @@
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+1" />
+                android:text="@string/_1plus" />
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+2" />
+                android:text="@string/_2plus" />
 
             <Button
                 android:layout_width="70dp"
                 android:layout_height="50dp"
-                android:text="+3" />
+                android:text="@string/_3plus" />
         </LinearLayout>
 
         <LinearLayout
@@ -145,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Equipo 2"
+                android:text="@string/equipo_2"
                 android:textSize="20sp"
                 android:textColor="@color/white"/>
 
@@ -154,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="18"
+                android:text="@string/_18"
                 android:textColor="#0F0"
                 android:textSize="80sp" />
         </LinearLayout>
@@ -170,7 +173,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Faltas"
+            android:text="@string/faltas"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
@@ -185,13 +188,13 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="+"
+            android:text="@string/plus"
             android:layout_margin="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/_0"
             android:textColor="#FFFF00"
             android:textSize="40sp"
             android:layout_margin="10dp"/>
@@ -199,7 +202,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X"
+            android:text="@string/x"
             android:textColor="#FFFFFF"
             android:textSize="40sp"
             android:layout_margin="10dp"/>
@@ -207,7 +210,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
+            android:text="@string/_0"
             android:textColor="#FFFF00"
             android:textSize="40sp"
             android:layout_margin="10dp"/>
@@ -215,7 +218,7 @@
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="+"
+            android:text="@string/plus"
             android:layout_margin="10dp"/>
     </LinearLayout>
 
@@ -229,14 +232,14 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="EDITAR"
+            android:text="@string/editar"
             android:layout_margin="8dp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COMPARAR"
+            android:text="@string/compartir"
             android:layout_margin="8dp"/>
 
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
